@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Heading -->
+  <h1 role="heading" aria-level="1">Pooja Jadhav - Portfolio</h1>
 
+  <!-- Navigation -->
+  <nav role="navigation" aria-label="Main navigation">
+    <ul role="list">
+      <li role="listitem"><a href="#about">About</a></li>
+      <li role="listitem"><a href="#projects">Projects</a></li>
+      <li role="listitem"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image -->
+  <img role="img" src="profile.jpg" alt="Portrait of Pooja Jadhav">
+
+  <!-- Brief description -->
+  <section id="about">
+    <p>
+      Hello! I’m Pooja, a passionate web developer who loves building accessible,
+      user-friendly applications. I enjoy solving problems, learning new 
+      technologies, and creating inclusive experiences for everyone.
+    </p>
+  </section>
+
+  <!-- List of skills -->
+  <section id="skills">
+    <h2 role="heading" aria-level="2">Skills</h2>
+    <ul role="list">
+      <li role="listitem">JavaScript & React</li>
+      <li role="listitem">HTML5 & CSS3</li>
+      <li role="listitem">Accessibility (A11y) Best Practices</li>
+    </ul>
+  </section>
+
+  <!-- Topic Tags -->
+  <section id="tags">
+    <h2 role="heading" aria-level="2">Topic Tags</h2>
+    <ul role="list">
+      <li role="listitem">Web Development</li>
+      <li role="listitem">Accessibility</li>
+      <li role="listitem">Portfolio</li>
+    </ul>
+  </section>
+
+  <!-- Reference -->
+  <footer>
+    <p>
+      For more information on ARIA roles, 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles" target="_blank">
+        click here
+      </a>.
+    </p>
+  </footer>
 </body>
-
 </html>
